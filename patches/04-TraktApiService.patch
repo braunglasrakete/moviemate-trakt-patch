@@ -1,0 +1,134 @@
+--- a/smali/com/tgomews/apihelper/api/trakt/services/TraktApiService.smali
++++ b/smali/com/tgomews/apihelper/api/trakt/services/TraktApiService.smali
+@@ -347,7 +347,7 @@
+     .end annotation
+ .end method
+ 
+-.method public abstract getCollection(Ljava/lang/String;Ljava/lang/String;)Lretrofit2/Call;
++.method public abstract getCollection(Ljava/lang/String;Ljava/lang/String;II)Lretrofit2/Call;
+     .param p1    # Ljava/lang/String;
+         .annotation runtime Lretrofit2/http/Path;
+             value = "type"
+@@ -358,12 +358,22 @@
+             value = "extended"
+         .end annotation
+     .end param
++    .param p3    # I
++        .annotation runtime Lretrofit2/http/Query;
++            value = "limit"
++        .end annotation
++    .end param
++    .param p4    # I
++        .annotation runtime Lretrofit2/http/Query;
++            value = "page"
++        .end annotation
++    .end param
+     .annotation system Ldalvik/annotation/Signature;
+         value = {
+             "(",
+             "Ljava/lang/String;",
+             "Ljava/lang/String;",
+-            ")",
++            "II)",
+             "Lretrofit2/Call<",
+             "Ljava/util/List<",
+             "Lcom/tgomews/apihelper/api/trakt/entities/UserTraktItem;",
+@@ -637,7 +647,7 @@
+     .end annotation
+ .end method
+ 
+-.method public abstract getRatings(Ljava/lang/String;Ljava/lang/String;)Lretrofit2/Call;
++.method public abstract getRatings(Ljava/lang/String;Ljava/lang/String;II)Lretrofit2/Call;
+     .param p1    # Ljava/lang/String;
+         .annotation runtime Lretrofit2/http/Path;
+             value = "type"
+@@ -648,12 +658,22 @@
+             value = "extended"
+         .end annotation
+     .end param
++    .param p3    # I
++        .annotation runtime Lretrofit2/http/Query;
++            value = "limit"
++        .end annotation
++    .end param
++    .param p4    # I
++        .annotation runtime Lretrofit2/http/Query;
++            value = "page"
++        .end annotation
++    .end param
+     .annotation system Ldalvik/annotation/Signature;
+         value = {
+             "(",
+             "Ljava/lang/String;",
+             "Ljava/lang/String;",
+-            ")",
++            "II)",
+             "Lretrofit2/Call<",
+             "Ljava/util/List<",
+             "Lcom/tgomews/apihelper/api/trakt/entities/UserTraktItem;",
+@@ -1172,7 +1192,7 @@
+     .end annotation
+ .end method
+ 
+-.method public abstract getWatchedlist(Ljava/lang/String;Ljava/lang/String;)Lretrofit2/Call;
++.method public abstract getWatchedlist(Ljava/lang/String;Ljava/lang/String;II)Lretrofit2/Call;
+     .param p1    # Ljava/lang/String;
+         .annotation runtime Lretrofit2/http/Path;
+             value = "type"
+@@ -1183,12 +1203,22 @@
+             value = "extended"
+         .end annotation
+     .end param
++    .param p3    # I
++        .annotation runtime Lretrofit2/http/Query;
++            value = "limit"
++        .end annotation
++    .end param
++    .param p4    # I
++        .annotation runtime Lretrofit2/http/Query;
++            value = "page"
++        .end annotation
++    .end param
+     .annotation system Ldalvik/annotation/Signature;
+         value = {
+             "(",
+             "Ljava/lang/String;",
+             "Ljava/lang/String;",
+-            ")",
++            "II)",
+             "Lretrofit2/Call<",
+             "Ljava/util/List<",
+             "Lcom/tgomews/apihelper/api/trakt/entities/UserTraktItem;",
+@@ -1223,7 +1253,7 @@
+     .end annotation
+ .end method
+ 
+-.method public abstract getWatchlist(Ljava/lang/String;Ljava/lang/String;)Lretrofit2/Call;
++.method public abstract getWatchlist(Ljava/lang/String;Ljava/lang/String;II)Lretrofit2/Call;
+     .param p1    # Ljava/lang/String;
+         .annotation runtime Lretrofit2/http/Path;
+             value = "type"
+@@ -1234,12 +1264,22 @@
+             value = "extended"
+         .end annotation
+     .end param
++    .param p3    # I
++        .annotation runtime Lretrofit2/http/Query;
++            value = "limit"
++        .end annotation
++    .end param
++    .param p4    # I
++        .annotation runtime Lretrofit2/http/Query;
++            value = "page"
++        .end annotation
++    .end param
+     .annotation system Ldalvik/annotation/Signature;
+         value = {
+             "(",
+             "Ljava/lang/String;",
+             "Ljava/lang/String;",
+-            ")",
++            "II)",
+             "Lretrofit2/Call<",
+             "Ljava/util/List<",
+             "Lcom/tgomews/apihelper/api/trakt/entities/UserTraktItem;",

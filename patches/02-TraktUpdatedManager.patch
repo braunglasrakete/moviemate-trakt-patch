@@ -1,0 +1,20 @@
+--- a/smali/com/moviematelite/api/TraktUpdatedManager.smali
++++ b/smali/com/moviematelite/api/TraktUpdatedManager.smali
+@@ -303,17 +303,6 @@
+ 
+     if-eqz v0, :cond_0
+ 
+-    .line 3
+-    invoke-virtual {v1}, Lg/a/a/v/a;->d()I
+-
+-    move-result v1
+-
+-    invoke-virtual {v0}, Lg/a/a/v/a;->d()I
+-
+-    move-result v0
+-
+-    if-eq v1, v0, :cond_0
+-
+     .line 4
+     invoke-static {}, Lcom/tgomews/apihelper/api/trakt/TraktApi;->getInstance()Lcom/tgomews/apihelper/api/trakt/TraktApi;
+ 

@@ -1,0 +1,19 @@
+--- a/smali/com/moviematelite/api/TraktUpdatedManager$9.smali
++++ b/smali/com/moviematelite/api/TraktUpdatedManager$9.smali
+@@ -95,6 +95,16 @@
+ 
+     .line 5
+     :cond_2
++    if-eqz p1, :goto_1
++
++    invoke-virtual {p1}, Lretrofit2/Response;->code()I
++
++    move-result p2
++
++    const/16 p3, 0x191
++
++    if-ne p2, p3, :goto_1
++
+     invoke-static {}, Lcom/moviematelite/MovieMateApp;->b()Landroid/content/Context;
+ 
+     move-result-object p1
