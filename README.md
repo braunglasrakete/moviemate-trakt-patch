@@ -64,6 +64,10 @@ use.
 
 ## Requirements
 
+- An APK for Movie Mate Lite 6.8.1, internal version number 6082, MD5
+  checksum 1381533d7dcd048fc39815b1caf338c4 (can be obtained from
+  softonic.com under the filename
+  com-moviematelite-6082-62742941-1381533d7dcd048fc39815b1caf338c4.apk
 - A JDK (for `apktool`, `apksigner`, `zipalign`, `keytool`)
 - [`apktool`](https://apktool.org/docs/install) on your `PATH`
 - Android SDK build-tools installed, with `apksigner` and `zipalign` on
