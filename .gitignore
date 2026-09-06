@@ -1,0 +1,7 @@
+# Build output and local signing key — never commit these
+dist/
+*.jks
+*.keystore
+
+# Don't accidentally commit an APK
+*.apk
